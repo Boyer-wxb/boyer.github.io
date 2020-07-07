@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "editor.md": "^1.5.0",
     "element-ui": "^2.13.2",
     "moment": "^2.27.0",
     "vue": "^2.6.11",
