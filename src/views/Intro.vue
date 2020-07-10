@@ -1,8 +1,8 @@
 <template>
     <div id='intro'>
         <div>技术栈</div>
-        <transition-group tag="div" name="el-zoom-in-left">
-            <div v-for="(item, index) in techs" :key="'li-'+index" v-show="item.show">
+        <transition-group tag="div" name="el-zoom-in-left" class="techs">
+            <div v-for="(item, index) in techs" :key="'li-'+index" v-show="item.show" class="tech">
                 <span>{{item.name}}</span>
                 <ul v-for="(p,i) in item.point" :key="'p-'+i">
                     <li>{{p}}</li>
@@ -78,5 +78,14 @@ $footer: 50px;
 #intro{
     height: calc(100vh - #{$header} - #{$footer});
     margin: 10px 15px;
+    .techs{
+        display: flex;
+        flex-wrap: wrap;
+        .tech{
+            margin: 0 30px 15px 0;
+            min-width: 25%;
+        }
+        margin-bottom: 50px;
+    }
 }
 </style>

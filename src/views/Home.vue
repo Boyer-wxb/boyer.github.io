@@ -1,5 +1,8 @@
 <template>
   <div id="v">
+    <div class="bili" @click="play" v-show="!show">
+      <img src="@/assets/img/bilibili-line.png" alt="" class="bili-line">
+    </div>
     <div class='cover' @click="play" v-show="!show">
       <img src="@/assets/img/1.jpg" alt="" class="video">
     </div>
@@ -49,6 +52,16 @@ $footer: 50px;
   .frame{
     width: 100%;
     height: inherit;
+  }
+  .bili{
+    position: absolute;
+    display: flex;
+    bottom: 60px;
+    right: 15px;
+    cursor: pointer;
+    .bili-line{
+      width: 80px;
+    }
   }
 }
 </style>
