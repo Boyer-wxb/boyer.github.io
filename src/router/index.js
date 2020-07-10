@@ -24,6 +24,11 @@ Vue.use(VueRouter)
     name: 'Building',
     component: () => import(/* webpackChunkName: "Building" */ '../views/Building.vue')
   },
+  {
+    path: '/love',
+    name: 'Love',
+    component: () => import(/* webpackChunkName: "Love" */ '../views/Love.vue')
+  },
 ]
 
 const router = new VueRouter({
